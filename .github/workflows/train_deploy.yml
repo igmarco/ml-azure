@@ -28,7 +28,7 @@ jobs:
     # Connect or Create a Compute Target in Azure Machine Learning
     - name: Connect/Create Azure Machine Learning Compute Target
       id: aml_compute_training
-      uses: Azure/aml-compute@v2
+      uses: Azure/aml-compute@v1
       with:
           azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
     
