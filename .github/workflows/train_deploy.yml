@@ -42,7 +42,7 @@ jobs:
     # Register model in Azure Machine Learning model registry
     - name: Register model
       id: aml_registermodel
-      uses: Azure/aml-registermodel@v2
+      uses: Azure/aml-registermodel@v1
       with:
           azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
           run_id:  ${{ steps.aml_run.outputs.run_id }}
